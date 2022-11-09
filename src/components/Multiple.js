@@ -111,6 +111,7 @@ const Multiple = (props) => {
             style={{
               color: "green",
               marginLeft: "20px",
+              
             }}
           >
             Choose Collection
@@ -582,7 +583,7 @@ const Multiple = (props) => {
             boxShadow: "0 0 7px green",
           }}
         >
-          Home
+          Go Home
         </Button>
       </div>
     </>

@@ -67,3 +67,7 @@
 .checkbox:checked + .label .switch {
   right: 0px;
 }
+.click:hover {
+  background: blue;
+  color: white;
+}

@@ -7,6 +7,7 @@ import Modal from "@mui/material/Modal";
 import Switch from "@mui/material/Switch";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
+import { green } from "@mui/material/colors";
 
 const Single = (props) => {
   const navigate = useNavigate();
@@ -67,12 +68,10 @@ const Single = (props) => {
   const toggleBtn3 = (e) => {
     let response = e?.target?.checked;
     console.log(response);
-    if(response == false)
-    {
-        setMint(true);
-    }
-    else{
-        setMint(false)
+    if (response == false) {
+      setMint(true);
+    } else {
+      setMint(false);
     }
   };
   const handSubmit = (e) => {
@@ -107,7 +106,7 @@ const Single = (props) => {
     }
   };
 
- return (
+  return (
     <>
       <div className="App">
         <div
@@ -130,10 +129,51 @@ const Single = (props) => {
             width: "fit-content",
             color: "green",
             marginLeft: "90px",
+            float: "left",
           }}
         >
-          <Button onClick={handleOpen}>Create New</Button>
+          <Button
+            onClick={handleOpen}
+            style={{
+              color: "green",
+              height: "150px",
+              width: "130px",
+              border: "solid 1px green",
+              borderRadius: "12px",
+            }}
+          >
+            Create New
+          </Button>
         </div>
+        <div
+          style={{
+            width: "fit-content",
+            color: "green",
+            height: "150px",
+            width: "130px",
+            border: "solid 1px green",
+            borderRadius: "12px",
+            marginLeft: "20px",
+            float: "left",
+          }}
+        ></div>
+        <div
+          style={{
+            width: "fit-content",
+            color: "green",
+            height: "150px",
+            width: "130px",
+            border: "solid 1px green",
+            borderRadius: "12px",
+            marginLeft: "20px",
+            float: "left",
+          }}
+        ></div>
+  
+        <br />
+        <br />
+        <br />
+        <br />
         <div>
           {" "}
           <h3
@@ -377,7 +417,7 @@ const Single = (props) => {
                 marginTop: "20px",
               }}
             >
-              Lazy Minting <Switch onChange={toggleBtn3}  />
+              Lazy Minting <Switch onChange={toggleBtn3} />
             </h3>
             <br />
           </div>
@@ -568,7 +608,7 @@ const Single = (props) => {
             boxShadow: "0 0 7px green",
           }}
         >
-          Home
+          Go Home
         </Button>
       </div>
     </>
