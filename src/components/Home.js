@@ -69,37 +69,7 @@ const Home = (props) => {
         >
           Profile
         </Button>
-        <Button
-          onClick={() => navigate("/profile")}
-          style={{
-            border: "solid 2px green",
-            width: "130px",
-            height: "150px",
-            fontSize: "20px",
-            color: "green",
-            marginLeft: "30px",
-            boxShadow: "0 0 10px green",
-            borderRadius: "17px",
-          }}
-        >
-          Profile
-        </Button>
-        <Button
-          onClick={() => navigate("/profile")}
-          style={{
-            border: "solid 2px green",
-            width: "130px",
-            height: "150px",
-            fontSize: "20px",
-            color: "green",
-            marginLeft: "30px",
-            boxShadow: "0 0 10px green",
-            borderRadius: "17px",
-          }}
-        >
-          Profile
-        </Button>
-      
+        
       </p>
     </>
   );
