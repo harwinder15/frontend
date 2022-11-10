@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import Button from "@mui/material/Button";
 import { useNavigate } from "react-router-dom";
+import AccountCircleIcon from "@mui/icons-material/AccountCircle";
+import Header from "../components/Header";
 
 function Detail() {
   const navigate = useNavigate();
@@ -45,6 +47,7 @@ function Detail() {
 
   return (
     <>
+      <Header />
       <div style={{ width: "100%", height: "1000px" }}>
         <div
           style={{
@@ -94,9 +97,9 @@ function Detail() {
             >
               <h4>Creator</h4>
               <button
-                style={{ borderRadius: "30px", width: "35px", height: "35px" }}
+                style={{ borderRadius: "30px", width: "38px", height: "39px" }}
               >
-                C
+                <AccountCircleIcon />
               </button>
               ghsghgh
             </div>
@@ -109,9 +112,9 @@ function Detail() {
             >
               <h4>Collector</h4>
               <button
-                style={{ borderRadius: "30px", width: "35px", height: "35px" }}
+                style={{ borderRadius: "30px", width: "38px", height: "39px" }}
               >
-                C
+                <AccountCircleIcon />
               </button>
               fddggfr
             </div>
@@ -134,7 +137,7 @@ function Detail() {
               }}
               onClick={onClick}
             >
-              On Sale
+              Action
             </Button>
             <Button
               style={{ marginTop: "20px" }}
@@ -148,7 +151,7 @@ function Detail() {
               }}
               onClick={onClick1}
             >
-              On Sale
+              History
             </Button>{" "}
             <Button
               style={{ marginTop: "20px" }}
@@ -162,7 +165,7 @@ function Detail() {
               }}
               onClick={onClick2}
             >
-              On Sale
+              Active Bids
             </Button>{" "}
             <Button
               style={{ marginTop: "20px" }}
@@ -176,36 +179,122 @@ function Detail() {
               }}
               onClick={onClick3}
             >
-              On Sale
+              Details
             </Button>
             {showResults ? (
-              <div
-                style={{
-                  height: "360px",
-                  width: "250px",
-                  borderRadius: "20px",
-                  border: "solid 1px green",
-                  marginLeft: "20px",
-                  boxShadow: "0 0 5px green",
-                }}
-              >
+              <>
                 <br />
-                <p style={{ marginLeft: "20px" }}>Everyone</p>
+                <br />
+                <br />
+
                 <Button
                   onClick={() => navigate("/detail")}
                   style={{
                     height: "30px",
-                    width: "130px",
+                    width: "150px",
                     marginLeft: "10px",
                     borderRadius: "10px",
                     color: "purple",
                     border: "solid 1px purple",
                     boxShadow: "0 0 5px purple",
+                    fontSize: "12px",
                   }}
                 >
                   Remove From Sale{" "}
                 </Button>
-              </div>
+                <Button
+                  onClick={() => navigate("/detail")}
+                  style={{
+                    height: "30px",
+                    width: "150px",
+                    marginLeft: "10px",
+                    borderRadius: "10px",
+                    color: "purple",
+                    border: "solid 1px purple",
+                    boxShadow: "0 0 5px purple",
+                    fontSize: "12px",
+                  }}
+                >
+                  Transfer NFT{" "}
+                </Button>
+              </>
+            ) : null}
+            {showResults1 ? (
+              <>
+                <br />
+                <br />
+                <br />
+
+                <div style={{ width: "320px", height: "200px" }}>
+                  <div
+                    style={{
+                      width: "300px",
+                      height: "50px",
+                      border: "groove 1px green",
+                      boxShadow: "0 0 5px green",
+                    }}
+                  >
+                    UBLISTED
+                    <br />
+                    21 minutes ago
+                  </div>
+                  <div
+                    style={{
+                      width: "300px",
+                      height: "50px",
+                      border: "groove 1px green",
+                      boxShadow: "0 0 5px green",
+                    }}
+                  >
+                    UNLISTED
+                    <br />
+                    11 minutes ago
+                  </div>
+                  <div
+                    style={{
+                      width: "300px",
+                      height: "50px",
+                      border: "groove 1px green",
+                      boxShadow: "0 0 5px green",
+                    }}
+                  >
+                    LISTED
+                    <br />
+                    17 minutes ago
+                  </div>
+                  <div
+                    style={{
+                      width: "300px",
+                      height: "50px",
+                      border: "groove 1px green",
+                      boxShadow: "0 0 5px green",
+                    }}
+                  >
+                    CREATED
+                    <br />a day ago
+                  </div>
+                </div>
+              </>
+            ) : null}
+            {showResults3 ? (
+              <>
+                <br />
+                <br />
+                <br />
+
+                <div
+                  style={{
+                    width: "250px",
+                    height: "120px",
+                    border: "groove 1px green",
+                    boxShadow: "0 0 5px green",
+                    borderRadius: "12px",
+                  }}
+                >
+                  <h3 style={{ marginLeft: "110px" }}>ff</h3>
+                  <h2 style={{ marginLeft: "100px" }}>ffg</h2>
+                </div>
+              </>
             ) : null}
           </div>
         </div>

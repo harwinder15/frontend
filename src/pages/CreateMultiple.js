@@ -7,9 +7,9 @@ import Modal from "@mui/material/Modal";
 import Switch from "@mui/material/Switch";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
-import { green } from "@mui/material/colors";
+import Header from "../components/Header";
 
-const Single = (props) => {
+const CreateMultiple = (props) => {
   const navigate = useNavigate();
   const style = {
     position: "absolute",
@@ -27,7 +27,7 @@ const Single = (props) => {
   const [files, setFiles] = useState();
   const [file, setFile] = useState();
   const [show3, setShow3] = useState(false);
-  const [mint, setMint] = useState(true);
+  const [mint, setMint] = useState(false);
   const [toggle, setToggle] = useState(false);
   const [count, setCount] = useState(0);
   const handleOpen = () => setOpen(true);
@@ -67,12 +67,7 @@ const Single = (props) => {
   };
   const toggleBtn3 = (e) => {
     let response = e?.target?.checked;
-    console.log(response);
-    if (response == false) {
-      setMint(true);
-    } else {
-      setMint(false);
-    }
+    setMint(response);
   };
   const handSubmit = (e) => {
     e.preventDefault();
@@ -98,7 +93,7 @@ const Single = (props) => {
       setBids(true);
     }
   };
-  const handleClick = (e) => {
+  const handleTick = (e) => {
     if (show3 == true) {
       setShow3(false);
     } else {
@@ -108,6 +103,7 @@ const Single = (props) => {
 
   return (
     <>
+      <Header />
       <div className="App">
         <div
           style={{
@@ -129,51 +125,10 @@ const Single = (props) => {
             width: "fit-content",
             color: "green",
             marginLeft: "90px",
-            float: "left",
           }}
         >
-          <Button
-            onClick={handleOpen}
-            style={{
-              color: "green",
-              height: "150px",
-              width: "130px",
-              border: "solid 1px green",
-              borderRadius: "12px",
-            }}
-          >
-            Create New
-          </Button>
+          <Button onClick={handleOpen}>Create New</Button>
         </div>
-        <div
-          style={{
-            width: "fit-content",
-            color: "green",
-            height: "150px",
-            width: "130px",
-            border: "solid 1px green",
-            borderRadius: "12px",
-            marginLeft: "20px",
-            float: "left",
-          }}
-        ></div>
-        <div
-          style={{
-            width: "fit-content",
-            color: "green",
-            height: "150px",
-            width: "130px",
-            border: "solid 1px green",
-            borderRadius: "12px",
-            marginLeft: "20px",
-            float: "left",
-          }}
-        ></div>
-  
-        <br />
-        <br />
-        <br />
-        <br />
         <div>
           {" "}
           <h3
@@ -420,6 +375,14 @@ const Single = (props) => {
               Lazy Minting <Switch onChange={toggleBtn3} />
             </h3>
             <br />
+            {/* {mint ? (
+      <input
+        type="text"
+        style={{
+          marginLeft: "20px",
+        }}
+      ></input>
+    ) : null} */}
           </div>
         </div>
         <div>
@@ -451,6 +414,20 @@ const Single = (props) => {
               <textarea
                 style={{ width: "500px", height: "80px", marginLeft: "20px" }}
                 placeholder="Description"
+              />
+              <h3
+                style={{
+                  color: "green",
+                  marginLeft: "20px",
+                  marginTop: "20px",
+                }}
+              >
+                Quantity
+              </h3>
+              <input
+                style={{ width: "500px", height: "30px", marginLeft: "20px" }}
+                type="number"
+                placeholder="1"
               />
               {mint ? (
                 <>
@@ -501,7 +478,7 @@ const Single = (props) => {
                   height: "30px",
                   borderRadius: "10px",
                 }}
-                onClick={handleClick}
+                onClick={handleTick}
               >
                 {show3 == false
                   ? "Show Advanced Settings"
@@ -615,4 +592,4 @@ const Single = (props) => {
   );
 };
 
-export default Single;
+export default CreateMultiple;

@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import ToggleButton from "@mui/material/ToggleButton";
 import ToggleButtonGroup from "@mui/material/ToggleButtonGroup";
 import Button from "@mui/material/Button";
+import Header from "../components/Header";
 
 function Profile(props) {
   const navigate = useNavigate();
@@ -59,6 +60,7 @@ function Profile(props) {
 
   return (
     <>
+      <Header />
       <div style={{ height: "1000%" }}>
         <input
           type="file"
