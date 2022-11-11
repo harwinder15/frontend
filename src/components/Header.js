@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-
+import "../App.css";
 const Header = (props) => {
   const navigate = useNavigate();
   function handleClick(e) {
@@ -10,82 +10,31 @@ const Header = (props) => {
 
   return (
     <>
-      <div
-        style={{ backgroundColor: "lightgreen", width: "100%", height: "70px" }}
-      >
-        <div
-          style={{
-            height: "70px",
-            width: "50%",
-            float: "left",
-          }}
-        >
-          <h2 style={{ marginLeft: "70px" }}>NFT MarketPlace</h2>
+      <div className="mainheader">
+        <div className="innerheader">
+          <h2 className="h2">NFT MarketPlace</h2>
         </div>
-        <div
-          style={{
-            height: "70px",
-            width: "50%",
-            float: "left",
-          }}
-        >
+        <div className="navigate">
           <button
             onClick={() => navigate("/explore")}
-            style={{
-              color: "black",
-              backgroundColor: "lightgreen",
-              border: "none",
-              width: "100px",
-              height: "40px",
-              marginTop: "15px",
-              cursor: "pointer",
-              marginLeft: "150px",
-            }}
+            className="navigateexplore"
           >
             Explore
           </button>
           <button
             onClick={() => navigate("/create")}
-            style={{
-              color: "black",
-              backgroundColor: "lightgreen",
-              border: "none",
-              width: "100px",
-              height: "40px",
-              marginTop: "15px",
-              cursor: "pointer",
-            }}
+            className="navigatecreate"
           >
             Create
           </button>
           <button
             onClick={() => navigate("/profile")}
-            style={{
-              color: "black",
-              backgroundColor: "lightgreen",
-              border: "none",
-              width: "100px",
-              height: "40px",
-              marginTop: "15px",
-              cursor: "pointer",
-            }}
+            className="navigateprofile"
           >
             Profile
           </button>
 
-          <button
-            style={{
-              color: "black",
-              backgroundColor: "lightgreen",
-              border: "none",
-              width: "100px",
-              height: "40px",
-              marginTop: "15px",
-              cursor: "pointer",
-            }}
-            onClick={handleClick}
-            className="click"
-          >
+          <button className="navigatewallet" onClick={handleClick}>
             Wallet
           </button>
         </div>

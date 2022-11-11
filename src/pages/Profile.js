@@ -5,6 +5,8 @@ import ToggleButton from "@mui/material/ToggleButton";
 import ToggleButtonGroup from "@mui/material/ToggleButtonGroup";
 import Button from "@mui/material/Button";
 import Header from "../components/Header";
+import logo2 from "../logo2.jpg";
+
 
 function Profile(props) {
   const navigate = useNavigate();
@@ -16,9 +18,7 @@ function Profile(props) {
   const [file, setFile] = useState();
   const [file1, setFile1] = useState();
   const [alignment, setAlignment] = React.useState("web");
-  const handleChange = (event, newAlignment) => {
-    setAlignment(newAlignment);
-  };
+
   function handleUpload(e) {
     console.log(e.target.files);
     setFile1(URL.createObjectURL(e.target.files[0]));
@@ -91,8 +91,7 @@ function Profile(props) {
           onChange={handleUpload}
           aria-label="Platform"
         >
-          {" "}
-          <input type="file" onChange={handleChange} />
+
           <Button
             variant="text"
             sx={{
@@ -162,19 +161,20 @@ function Profile(props) {
                 boxShadow: "0 0 5px green",
               }}
             >
-              {" "}
-              <img
-                src={file1}
-                style={{
-                  width: "200px",
-                  height: "240px",
-                  marginTop: "15px",
-                  marginLeft: "25px",
-                  boxShadow: "0 0 5px green",
-                  border: "solid 1px lightgreen",
-                  borderRadius: "15px",
-                }}
-              />
+            {" "}
+        <img
+          src={logo2}
+          style={{
+            width: "200px",
+            height: "240px",
+            marginTop: "15px",
+            marginLeft: "25px",
+            boxShadow: "0 0 5px green",
+            border: "solid 1px lightgreen",
+            borderRadius: "15px",
+          }}
+          alt="logo2"
+        />
               <br />
               <p style={{ marginLeft: "20px" }}>Everyone</p>
               <Button
@@ -206,18 +206,19 @@ function Profile(props) {
               }}
             >
               {" "}
-              <img
-                src={file1}
-                style={{
-                  width: "200px",
-                  height: "240px",
-                  marginTop: "15px",
-                  marginLeft: "25px",
-                  boxShadow: "0 0 5px green",
-                  border: "solid 1px lightgreen",
-                  borderRadius: "15px",
-                }}
-              />
+        <img
+          src={logo2}
+          style={{
+            width: "200px",
+            height: "240px",
+            marginTop: "15px",
+            marginLeft: "25px",
+            boxShadow: "0 0 5px green",
+            border: "solid 1px lightgreen",
+            borderRadius: "15px",
+          }}
+          alt="logo2"
+        />
               <br />
               <p style={{ marginLeft: "20px" }}>World</p>
               <button
@@ -248,18 +249,19 @@ function Profile(props) {
               }}
             >
               {" "}
-              <img
-                src={file1}
-                style={{
-                  width: "200px",
-                  height: "240px",
-                  marginTop: "15px",
-                  marginLeft: "25px",
-                  boxShadow: "0 0 5px green",
-                  border: "solid 1px lightgreen",
-                  borderRadius: "15px",
-                }}
-              />
+        <img
+          src={logo2}
+          style={{
+            width: "200px",
+            height: "240px",
+            marginTop: "15px",
+            marginLeft: "25px",
+            boxShadow: "0 0 5px green",
+            border: "solid 1px lightgreen",
+            borderRadius: "15px",
+          }}
+          alt="logo2"
+        />
               <br />
               <p style={{ marginLeft: "20px" }}>Text</p>
               <button
@@ -290,19 +292,20 @@ function Profile(props) {
                 float: "left",
               }}
             >
-              {" "}
-              <img
-                src={file1}
-                style={{
-                  width: "200px",
-                  height: "240px",
-                  marginTop: "15px",
-                  marginLeft: "25px",
-                  boxShadow: "0 0 5px green",
-                  border: "solid 1px lightgreen",
-                  borderRadius: "15px",
-                }}
-              />
+             {" "}
+        <img
+          src={logo2}
+          style={{
+            width: "200px",
+            height: "240px",
+            marginTop: "15px",
+            marginLeft: "25px",
+            boxShadow: "0 0 5px green",
+            border: "solid 1px lightgreen",
+            borderRadius: "15px",
+          }}
+          alt="logo2"
+        />
               <br />
               <p style={{ marginLeft: "20px" }}>Hello</p>
               <button

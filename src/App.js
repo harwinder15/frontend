@@ -9,7 +9,6 @@ import Edit from "./pages/Edit";
 import Detail from "./pages/Detail";
 import Explore from "./pages/Explore";
 
-import "./App.css";
 function App() {
   return (
     <>
@@ -26,6 +25,7 @@ function App() {
             <Route path="/explore" element={<Explore />} />
           </Routes>
         </Router>
+
       </div>
     </>
   );

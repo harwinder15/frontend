@@ -3,10 +3,11 @@ import Button from "@mui/material/Button";
 import { useNavigate } from "react-router-dom";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import Header from "../components/Header";
+import logo2 from "../logo2.jpg";
+
 
 function Detail() {
   const navigate = useNavigate();
-  const [file, setFile] = useState();
   const [showResults, setShowResults] = React.useState(false);
   const [showResults1, setShowResults1] = React.useState(false);
   const [showResults2, setShowResults2] = React.useState(false);
@@ -40,10 +41,7 @@ function Detail() {
     }
   };
 
-  function handleChange(e) {
-    console.log(e.target.files);
-    setFile(URL.createObjectURL(e.target.files[0]));
-  }
+ 
 
   return (
     <>
@@ -56,18 +54,20 @@ function Detail() {
             float: "left",
           }}
         >
-          <input type="file" onChange={handleChange} />
-          <br />
+     
           <div>
-            <img
-              src={file}
-              style={{
-                width: "550px",
-                height: "350px",
-                marginLeft: "180px",
-                marginTop: "100px",
-              }}
-            />
+           
+              {" "}
+        <img
+          src={logo2}
+          style={{
+            width: "550px",
+            height: "350px",
+            marginLeft: "180px",
+            marginTop: "100px",
+          }}
+          alt="logo2"
+        />
           </div>
         </div>
         <div
