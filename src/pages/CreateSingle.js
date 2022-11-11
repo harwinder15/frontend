@@ -595,24 +595,8 @@ const CreateSingle = (props) => {
           </Box>
         </Modal>
       </div>
-      <br />
-      <br />
-      <div>
-        <Button
-          onClick={() => navigate(-1)}
-          style={{
-            width: "fit-content",
-            color: "green",
-            marginLeft: "20px",
-            width: "100px",
-            height: "30px",
-            border: "solid 2px green",
-            boxShadow: "0 0 7px green",
-          }}
-        >
-          Go Home
-        </Button>
-      </div>
+      
+     
     </>
   );
 };

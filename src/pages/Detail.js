@@ -3,7 +3,7 @@ import Button from "@mui/material/Button";
 import { useNavigate } from "react-router-dom";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import Header from "../components/Header";
-import logo2 from "../logo2.jpg";
+import logo4 from "../logo4.jpg";
 
 
 function Detail() {
@@ -46,11 +46,11 @@ function Detail() {
   return (
     <>
       <Header />
-      <div style={{ width: "100%", height: "1000px" }}>
+      <div style={{ width: "100%", height: "400px" }}>
         <div
           style={{
             width: "50%",
-            height: "1000px",
+            height: "400px",
             float: "left",
           }}
         >
@@ -59,11 +59,11 @@ function Detail() {
            
               {" "}
         <img
-          src={logo2}
+          src={logo4}
           style={{
             width: "550px",
             height: "350px",
-            marginLeft: "180px",
+            marginLeft: "100px",
             marginTop: "100px",
           }}
           alt="logo2"
@@ -73,7 +73,7 @@ function Detail() {
         <div
           style={{
             width: "50%",
-            height: "1000px",
+            height: "400px",
             float: "left",
           }}
         >
@@ -223,7 +223,7 @@ function Detail() {
               <>
                 <br />
                 <br />
-                <br />
+              
 
                 <div style={{ width: "320px", height: "200px" }}>
                   <div
@@ -299,22 +299,7 @@ function Detail() {
           </div>
         </div>
       </div>
-      <div>
-        <Button
-          onClick={() => navigate(-2)}
-          style={{
-            width: "fit-content",
-            color: "green",
-            marginLeft: "20px",
-            width: "100px",
-            height: "30px",
-            border: "solid 2px green",
-            boxShadow: "0 0 7px green",
-          }}
-        >
-          Go Home
-        </Button>
-      </div>
+
     </>
   );
 }

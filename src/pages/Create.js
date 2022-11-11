@@ -37,7 +37,7 @@ const Create = (props) => {
             color: "green",
             boxShadow: "0 0 10px green",
             borderRadius: "17px",
-            marginLeft: "600px",
+            marginLeft: "540px",
           }}
         >
           Single
@@ -58,20 +58,7 @@ const Create = (props) => {
           Multiple
         </Button>
       </p>
-      <Button
-        onClick={() => navigate(-1)}
-        style={{
-          width: "fit-content",
-          color: "green",
-          marginLeft: "700px",
-          width: "100px",
-          height: "30px",
-          border: "solid 2px green",
-          boxShadow: "0 0 7px green",
-        }}
-      >
-        Home
-      </Button>
+    
     </>
   );
 };

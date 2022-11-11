@@ -75,22 +75,10 @@ const Explore = (props) => {
         <Buy title={'Display'} />
         <Buy title={'Items'} />
         <Buy title={'Single Items'} />
+        <Buy title={'Multiple Items'} />
+        <Buy title={'Duouble Items'} />
       </div>
-      <div>
-        <Button
-          onClick={() => navigate(-1)}
-          style={{
-            color: "green",
-            marginRight: "1000px",
-            width: "100px",
-            height: "30px",
-            border: "solid 2px green",
-            boxShadow: "0 0 7px green",
-          }}
-        >
-          Home
-        </Button>
-      </div>
+   
     </>
   );
 };

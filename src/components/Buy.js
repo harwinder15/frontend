@@ -13,7 +13,7 @@ export default function Buy({ title }) {
           width: "250px",
           borderRadius: "20px",
           border: "solid 1px green",
-          marginLeft: "170px",
+          marginLeft: "70px",
           marginTop: "50px",
           boxShadow: "0 0 5px green",
           float: "left",

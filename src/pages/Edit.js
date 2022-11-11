@@ -149,22 +149,7 @@ function Edit() {
       </div>
       <br />
       <br />
-      <div>
-        <Button
-          onClick={() => navigate(-1)}
-          style={{
-            width: "fit-content",
-            color: "green",
-            marginLeft: "100px",
-            width: "120px",
-            height: "30px",
-            border: "solid 2px green",
-            boxShadow: "0 0 7px green",
-          }}
-        >
-          Go Profile
-        </Button>
-      </div>
+   
     </>
   );
 }
