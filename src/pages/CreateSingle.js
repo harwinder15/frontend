@@ -12,6 +12,10 @@ import Header from "../components/Header";
 
 const CreateSingle = (props) => {
   const navigate = useNavigate();
+
+
+
+
   const style = {
     position: "absolute",
     top: "50%",
@@ -225,9 +229,9 @@ const CreateSingle = (props) => {
             >
               Put On MarketPlace <Switch onChange={toggleBtn2} />
             </h3>
-            <h5>Select Method</h5> <br />
             {show1 ? (
               <>
+              <h5>Select Method</h5> <br />
                 <Button
                   style={{
                     height: "100px",

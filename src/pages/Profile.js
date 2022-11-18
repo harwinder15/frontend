@@ -157,8 +157,9 @@ function Profile(props) {
                 width: "250px",
                 borderRadius: "20px",
                 border: "solid 1px green",
-                marginLeft: "20px",
+                marginLeft: "50px",
                 boxShadow: "0 0 5px green",
+                float: "left"
               }}
             >
             {" "}
@@ -172,11 +173,12 @@ function Profile(props) {
             boxShadow: "0 0 5px green",
             border: "solid 1px lightgreen",
             borderRadius: "15px",
+            float: "left",
           }}
           alt="logo2"
         />
-              <br />
-              <p style={{ marginLeft: "20px" }}>Everyone</p>
+              <br/><br/>
+              <p style={{ marginLeft: "20px", marginTop: "240px"}}>Everyone</p>
               <Button
                 onClick={() => navigate("/detail")}
                 style={{
@@ -193,7 +195,7 @@ function Profile(props) {
               </Button>
             </div>
           ) : null}
-          <br />
+          
           {showResults1 ? (
             <div
               style={{
@@ -201,8 +203,10 @@ function Profile(props) {
                 width: "250px",
                 borderRadius: "20px",
                 border: "solid 1px green",
-                marginLeft: "20px",
+                marginLeft: "50px",
                 boxShadow: "0 0 5px green",
+                float: "left"
+
               }}
             >
               {" "}
@@ -216,11 +220,13 @@ function Profile(props) {
             boxShadow: "0 0 5px green",
             border: "solid 1px lightgreen",
             borderRadius: "15px",
+            float: "left",
+
           }}
           alt="logo2"
         />
               <br />
-              <p style={{ marginLeft: "20px" }}>World</p>
+              <p style={{ marginLeft: "20px" , marginTop: "260px"}}>World</p>
               <button
                 style={{
                   height: "30px",
@@ -236,7 +242,7 @@ function Profile(props) {
               </button>
             </div>
           ) : null}
-          <br />
+  
           {showResults2 ? (
             <div
               style={{
@@ -244,8 +250,10 @@ function Profile(props) {
                 width: "250px",
                 borderRadius: "20px",
                 border: "solid 1px green",
-                marginLeft: "20px",
+                marginLeft: "50px",
                 boxShadow: "0 0 5px green",
+                float: "left"
+
               }}
             >
               {" "}
@@ -279,7 +287,7 @@ function Profile(props) {
               </button>
             </div>
           ) : null}
-          <br />
+       
           {showResults3 ? (
             <div
               style={{
@@ -287,7 +295,7 @@ function Profile(props) {
                 width: "250px",
                 borderRadius: "20px",
                 border: "solid 1px green",
-                marginLeft: "20px",
+                marginLeft: "50px",
                 boxShadow: "0 0 5px green",
                 float: "left",
               }}

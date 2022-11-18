@@ -66,7 +66,7 @@ function Detail() {
             marginLeft: "100px",
             marginTop: "100px",
           }}
-          alt="logo2"
+          alt="logo4"
         />
           </div>
         </div>
